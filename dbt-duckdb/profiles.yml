@@ -1,0 +1,18 @@
+painter:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: 'databases/paintdb.duckdb'
+      extensions:
+        - parquet
+        - httpfs
+        - aws
+      #settings:
+      #  
+      filesystems:
+        - fs: s3 
+          anon: false 
+          key: $(aws configure get aws_access_key_id)
+          secret: $(aws configure get aws_secret_access_key)
+          

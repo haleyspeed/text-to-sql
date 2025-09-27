@@ -1,0 +1,1 @@
+select * from {{source('s3','paint_database_v1')}}

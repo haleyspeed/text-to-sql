@@ -1,0 +1,602 @@
+[0m12:47:23.309939 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1100a6df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11132c1f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11132c520>]}
+
+
+============================== 12:47:23.311505 | 9332b658-be37-48d1-be11-468793c39958 ==============================
+[0m12:47:23.311505 [info ] [MainThread]: Running with dbt=1.10.13
+[0m12:47:23.311756 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'log_cache_events': 'False', 'partial_parse': 'True', 'static_parser': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'version_check': 'True', 'warn_error': 'None', 'log_format': 'default', 'use_experimental_parser': 'False', 'no_print': 'None', 'log_path': 'logs', 'use_colors': 'True', 'empty': 'False', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'quiet': 'False', 'invocation_command': 'dbt run --profiles-dir .', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'profiles_dir': '.', 'cache_selected_only': 'False'}
+[0m12:47:23.312029 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/haley/Documents/AI/text-to-sql/dbt-duckdb/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m12:47:23.313448 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.035093624, "process_in_blocks": "0", "process_kernel_time": 0.09212, "process_mem_max_rss": "98418688", "process_out_blocks": "0", "process_user_time": 0.67784}
+[0m12:47:23.313634 [debug] [MainThread]: Command `dbt run` failed at 12:47:23.313594 after 0.04 seconds
+[0m12:47:23.313786 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1100a6df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11132cfa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11132ccd0>]}
+[0m12:47:23.313966 [debug] [MainThread]: Flushing usage events
+[0m12:47:23.782375 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:59:57.240946 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10406ac10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105145790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1051458b0>]}
+
+
+============================== 12:59:57.242925 | 0f261ddd-391e-4984-abfc-be3dfa64ec33 ==============================
+[0m12:59:57.242925 [info ] [MainThread]: Running with dbt=1.10.13
+[0m12:59:57.243183 [debug] [MainThread]: running dbt with arguments {'empty': 'False', 'partial_parse': 'True', 'debug': 'False', 'target_path': 'None', 'log_cache_events': 'False', 'no_print': 'None', 'profiles_dir': '.', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'warn_error': 'None', 'version_check': 'True', 'introspect': 'True', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'log_path': '/Users/haley/Documents/AI/text-to-sql/dbt-duckdb/logs', 'use_experimental_parser': 'False', 'quiet': 'False', 'use_colors': 'True', 'static_parser': 'True', 'write_json': 'True', 'invocation_command': 'dbt run --profiles-dir .', 'printer_width': '80'}
+[0m12:59:57.244486 [error] [MainThread]: Encountered an error:
+Runtime Error
+  
+  dbt encountered an error while trying to read your profiles.yml file.
+  
+  Runtime Error
+    Syntax error near line 2
+    ------------------------------
+    1  | your_profile_name: painter
+    2  |   target: dev
+    3  |   outputs:
+    4  |     dev:
+    5  |       type: duckdb
+    
+    Raw Error:
+    ------------------------------
+    mapping values are not allowed in this context
+      in "<unicode string>", line 2, column 9
+  
+[0m12:59:57.245414 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.011951209, "process_in_blocks": "0", "process_kernel_time": 0.057325, "process_mem_max_rss": "95305728", "process_out_blocks": "0", "process_user_time": 0.503045}
+[0m12:59:57.245587 [debug] [MainThread]: Command `dbt run` failed at 12:59:57.245549 after 0.01 seconds
+[0m12:59:57.245728 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10406ac10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1051b9310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1051b9730>]}
+[0m12:59:57.245880 [debug] [MainThread]: Flushing usage events
+[0m12:59:57.721768 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:00:19.634578 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103d4fc10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e46790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e468b0>]}
+
+
+============================== 13:00:19.636532 | 2d245145-bb24-4089-b000-a0afc46bff8f ==============================
+[0m13:00:19.636532 [info ] [MainThread]: Running with dbt=1.10.13
+[0m13:00:19.636792 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'use_experimental_parser': 'False', 'target_path': 'None', 'debug': 'False', 'partial_parse': 'True', 'log_path': '/Users/haley/Documents/AI/text-to-sql/dbt-duckdb/logs', 'use_colors': 'True', 'printer_width': '80', 'version_check': 'True', 'no_print': 'None', 'write_json': 'True', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run --profiles-dir .', 'introspect': 'True', 'indirect_selection': 'eager', 'warn_error': 'None', 'static_parser': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'log_cache_events': 'False', 'empty': 'False'}
+[0m13:00:19.638018 [error] [MainThread]: Encountered an error:
+Runtime Error
+  
+  dbt encountered an error while trying to read your profiles.yml file.
+  
+  Runtime Error
+    Syntax error near line 2
+    ------------------------------
+    1  | your_profile_name: painter
+    2  |   target: dev
+    3  |   outputs:
+    4  |     dev:
+    5  |       type: duckdb
+    
+    Raw Error:
+    ------------------------------
+    mapping values are not allowed in this context
+      in "<unicode string>", line 2, column 9
+  
+[0m13:00:19.638916 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.011927375, "process_in_blocks": "0", "process_kernel_time": 0.055842, "process_mem_max_rss": "95649792", "process_out_blocks": "0", "process_user_time": 0.500422}
+[0m13:00:19.639095 [debug] [MainThread]: Command `dbt run` failed at 13:00:19.639050 after 0.01 seconds
+[0m13:00:19.639237 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103d4fc10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104eb8310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104eb8730>]}
+[0m13:00:19.639381 [debug] [MainThread]: Flushing usage events
+[0m13:00:20.015894 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:01:03.031545 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f82c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ffd160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ffd460>]}
+
+
+============================== 13:01:03.033074 | ee511d56-8c95-4b3b-87b6-2317a285b822 ==============================
+[0m13:01:03.033074 [info ] [MainThread]: Running with dbt=1.10.13
+[0m13:01:03.033322 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'profiles_dir': '.', 'quiet': 'False', 'log_cache_events': 'False', 'empty': 'False', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'printer_width': '80', 'use_colors': 'True', 'fail_fast': 'False', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'log_path': '/Users/haley/Documents/AI/text-to-sql/dbt-duckdb/logs', 'cache_selected_only': 'False', 'static_parser': 'True', 'partial_parse': 'True', 'warn_error': 'None', 'version_check': 'True', 'invocation_command': 'dbt run --profiles-dir .', 'write_json': 'True', 'target_path': 'None'}
+[0m13:01:03.035670 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'S3_ACCESS_KEY_ID'
+[0m13:01:03.036554 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.033993375, "process_in_blocks": "0", "process_kernel_time": 0.049749, "process_mem_max_rss": "96698368", "process_out_blocks": "0", "process_user_time": 0.5235}
+[0m13:01:03.036732 [debug] [MainThread]: Command `dbt run` failed at 13:01:03.036694 after 0.03 seconds
+[0m13:01:03.036876 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f82c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f891c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106fd0040>]}
+[0m13:01:03.037019 [debug] [MainThread]: Flushing usage events
+[0m13:01:03.444948 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:01:15.291988 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10341ac40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104495160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104495460>]}
+
+
+============================== 13:01:15.293518 | aa6bf0b3-57ad-4357-9a1e-4ebec1d43165 ==============================
+[0m13:01:15.293518 [info ] [MainThread]: Running with dbt=1.10.13
+[0m13:01:15.293761 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'write_json': 'True', 'profiles_dir': '.', 'introspect': 'True', 'quiet': 'False', 'cache_selected_only': 'False', 'use_colors': 'True', 'log_format': 'default', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run --profiles-dir .', 'partial_parse': 'True', 'printer_width': '80', 'empty': 'False', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'warn_error': 'None', 'static_parser': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'no_print': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/haley/Documents/AI/text-to-sql/dbt-duckdb/logs'}
+[0m13:01:15.797934 [error] [MainThread]: Encountered an error:
+Runtime Error
+  at path ['version']: '2' is not valid under any of the given schemas
+
+Error encountered in /Users/haley/Documents/AI/text-to-sql/dbt-duckdb/dbt_project.yml
+[0m13:01:15.799022 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.5358608, "process_in_blocks": "0", "process_kernel_time": 0.066068, "process_mem_max_rss": "118243328", "process_out_blocks": "0", "process_user_time": 0.626763}
+[0m13:01:15.799235 [debug] [MainThread]: Command `dbt run` failed at 13:01:15.799193 after 0.54 seconds
+[0m13:01:15.799385 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10341ac40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1036ba6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1036ba910>]}
+[0m13:01:15.799539 [debug] [MainThread]: Flushing usage events
+[0m13:01:16.316605 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:01:33.388078 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10505ec10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ae5160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ae5460>]}
+
+
+============================== 13:01:33.389618 | e6d26770-d7b6-429d-861d-0fb68063744a ==============================
+[0m13:01:33.389618 [info ] [MainThread]: Running with dbt=1.10.13
+[0m13:01:33.389873 [debug] [MainThread]: running dbt with arguments {'log_path': '/Users/haley/Documents/AI/text-to-sql/dbt-duckdb/logs', 'log_cache_events': 'False', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'empty': 'False', 'target_path': 'None', 'indirect_selection': 'eager', 'write_json': 'True', 'static_parser': 'True', 'no_print': 'None', 'profiles_dir': '.', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'quiet': 'False', 'partial_parse': 'True', 'invocation_command': 'dbt run --profiles-dir .', 'use_experimental_parser': 'False', 'warn_error': 'None'}
+[0m13:01:33.483945 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e6d26770-d7b6-429d-861d-0fb68063744a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103a50970>]}
+[0m13:01:33.508593 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e6d26770-d7b6-429d-861d-0fb68063744a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106bdd490>]}
+[0m13:01:33.509382 [info ] [MainThread]: Registered adapter: duckdb=1.9.6
+[0m13:01:33.556998 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m13:01:33.557381 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:01:33.557570 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'e6d26770-d7b6-429d-861d-0fb68063744a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106faa670>]}
+[0m13:01:33.893988 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e6d26770-d7b6-429d-861d-0fb68063744a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1079ee130>]}
+[0m13:01:33.911865 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/haley/Documents/AI/text-to-sql/dbt-duckdb/target/manifest.json
+[0m13:01:33.912548 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/haley/Documents/AI/text-to-sql/dbt-duckdb/target/semantic_manifest.json
+[0m13:01:33.920422 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e6d26770-d7b6-429d-861d-0fb68063744a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f943a0>]}
+[0m13:01:33.920641 [info ] [MainThread]: Found 431 macros
+[0m13:01:33.920809 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e6d26770-d7b6-429d-861d-0fb68063744a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f943d0>]}
+[0m13:01:33.921253 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m13:01:33.921497 [debug] [MainThread]: Command end result
+[0m13:01:33.929958 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/haley/Documents/AI/text-to-sql/dbt-duckdb/target/manifest.json
+[0m13:01:33.930579 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/haley/Documents/AI/text-to-sql/dbt-duckdb/target/semantic_manifest.json
+[0m13:01:33.932026 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/haley/Documents/AI/text-to-sql/dbt-duckdb/target/run_results.json
+[0m13:01:33.932986 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.5736673, "process_in_blocks": "0", "process_kernel_time": 0.083999, "process_mem_max_rss": "126730240", "process_out_blocks": "0", "process_user_time": 1.013195}
+[0m13:01:33.933173 [debug] [MainThread]: Command `dbt run` succeeded at 13:01:33.933138 after 0.57 seconds
+[0m13:01:33.933325 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10505ec10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106bdd490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1053594c0>]}
+[0m13:01:33.933471 [debug] [MainThread]: Flushing usage events
+[0m13:01:34.316116 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:01:53.345370 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10302bbe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1042a51f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1042a54f0>]}
+
+
+============================== 13:01:53.346981 | 27a3d049-8280-41ea-b6a0-bb579dce8e2d ==============================
+[0m13:01:53.346981 [info ] [MainThread]: Running with dbt=1.10.13
+[0m13:01:53.347237 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'no_print': 'None', 'log_format': 'default', 'version_check': 'True', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'use_colors': 'True', 'profiles_dir': '.', 'warn_error': 'None', 'empty': 'False', 'write_json': 'True', 'introspect': 'True', 'indirect_selection': 'eager', 'printer_width': '80', 'log_cache_events': 'False', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'static_parser': 'True', 'debug': 'False', 'cache_selected_only': 'False', 'invocation_command': 'dbt run --profiles-dir .', 'log_path': '/Users/haley/Documents/AI/text-to-sql/dbt-duckdb/logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m13:01:53.437962 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '27a3d049-8280-41ea-b6a0-bb579dce8e2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x101a0a6a0>]}
+[0m13:01:53.462021 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '27a3d049-8280-41ea-b6a0-bb579dce8e2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1045b92b0>]}
+[0m13:01:53.462730 [info ] [MainThread]: Registered adapter: duckdb=1.9.6
+[0m13:01:53.508690 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m13:01:53.537301 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m13:01:53.537503 [debug] [MainThread]: Partial parsing: added file: paintdb://models/test.sql
+[0m13:01:53.640370 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '27a3d049-8280-41ea-b6a0-bb579dce8e2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a17130>]}
+[0m13:01:53.683410 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/haley/Documents/AI/text-to-sql/dbt-duckdb/target/manifest.json
+[0m13:01:53.684123 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/haley/Documents/AI/text-to-sql/dbt-duckdb/target/semantic_manifest.json
+[0m13:01:53.688540 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '27a3d049-8280-41ea-b6a0-bb579dce8e2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1052febe0>]}
+[0m13:01:53.688762 [info ] [MainThread]: Found 1 model, 431 macros
+[0m13:01:53.688924 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '27a3d049-8280-41ea-b6a0-bb579dce8e2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105318520>]}
+[0m13:01:53.689584 [info ] [MainThread]: 
+[0m13:01:53.689738 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:01:53.689869 [info ] [MainThread]: 
+[0m13:01:53.690079 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m13:01:53.690447 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_paintdb'
+[0m13:01:53.712576 [debug] [ThreadPool]: Using duckdb connection "list_paintdb"
+[0m13:01:53.712764 [debug] [ThreadPool]: On list_paintdb: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "painter", "target_name": "dev", "connection_name": "list_paintdb"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = 'paintdb'
+    
+  
+  
+[0m13:01:53.712890 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:01:53.715447 [debug] [ThreadPool]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "painter", "target_name": "dev", "connection_name": "list_paintdb"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = 'paintdb'
+    
+  
+  
+[0m13:01:53.715591 [debug] [ThreadPool]: DuckDB adapter: Rolling back transaction.
+[0m13:01:53.715931 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:01:53.716105 [debug] [MainThread]: Connection 'list_paintdb' was properly closed.
+[0m13:01:53.716238 [info ] [MainThread]: 
+[0m13:01:53.716391 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.03 seconds (0.03s).
+[0m13:01:53.716611 [error] [MainThread]: Encountered an error:
+Runtime Error
+  IO Error: Cannot open file "/Users/haley/Documents/AI/text-to-sql/dbt-duckdb/../../AI/Databases/paintdb.duckdb": No such file or directory
+[0m13:01:53.717570 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.40114972, "process_in_blocks": "0", "process_kernel_time": 0.100251, "process_mem_max_rss": "137412608", "process_out_blocks": "0", "process_user_time": 0.84713}
+[0m13:01:53.717741 [debug] [MainThread]: Command `dbt run` failed at 13:01:53.717708 after 0.40 seconds
+[0m13:01:53.717887 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10302bbe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105318730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105318f10>]}
+[0m13:01:53.718041 [debug] [MainThread]: Flushing usage events
+[0m13:01:54.093539 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:02:52.696785 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1030aec40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104129160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104129460>]}
+
+
+============================== 13:02:52.698337 | 3541de0d-0f1f-4707-8ec0-f35a512cb4f2 ==============================
+[0m13:02:52.698337 [info ] [MainThread]: Running with dbt=1.10.13
+[0m13:02:52.698590 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'use_colors': 'True', 'version_check': 'True', 'warn_error': 'None', 'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'invocation_command': 'dbt run --profiles-dir .', 'profiles_dir': '.', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'write_json': 'True', 'log_format': 'default', 'quiet': 'False', 'introspect': 'True', 'no_print': 'None', 'cache_selected_only': 'False', 'static_parser': 'True', 'fail_fast': 'False', 'partial_parse': 'True', 'log_path': '/Users/haley/Documents/AI/text-to-sql/dbt-duckdb/logs', 'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'empty': 'False'}
+[0m13:02:52.789265 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3541de0d-0f1f-4707-8ec0-f35a512cb4f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104338610>]}
+[0m13:02:52.813098 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3541de0d-0f1f-4707-8ec0-f35a512cb4f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1042ee220>]}
+[0m13:02:52.813790 [info ] [MainThread]: Registered adapter: duckdb=1.9.6
+[0m13:02:52.859148 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m13:02:52.889778 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m13:02:52.889992 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '3541de0d-0f1f-4707-8ec0-f35a512cb4f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1039dfa60>]}
+[0m13:02:53.299437 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3541de0d-0f1f-4707-8ec0-f35a512cb4f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105533dc0>]}
+[0m13:02:53.325553 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/haley/Documents/AI/text-to-sql/dbt-duckdb/target/manifest.json
+[0m13:02:53.326233 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/haley/Documents/AI/text-to-sql/dbt-duckdb/target/semantic_manifest.json
+[0m13:02:53.330454 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3541de0d-0f1f-4707-8ec0-f35a512cb4f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10554fd00>]}
+[0m13:02:53.330655 [info ] [MainThread]: Found 1 model, 431 macros
+[0m13:02:53.330810 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3541de0d-0f1f-4707-8ec0-f35a512cb4f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1053a25b0>]}
+[0m13:02:53.331312 [info ] [MainThread]: 
+[0m13:02:53.331475 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:02:53.331607 [info ] [MainThread]: 
+[0m13:02:53.331841 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m13:02:53.332197 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_paintdb'
+[0m13:02:53.350365 [debug] [ThreadPool]: Using duckdb connection "list_paintdb"
+[0m13:02:53.350556 [debug] [ThreadPool]: On list_paintdb: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "painter", "target_name": "dev", "connection_name": "list_paintdb"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = 'paintdb'
+    
+  
+  
+[0m13:02:53.350689 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:02:53.352907 [debug] [ThreadPool]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "painter", "target_name": "dev", "connection_name": "list_paintdb"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = 'paintdb'
+    
+  
+  
+[0m13:02:53.353054 [debug] [ThreadPool]: DuckDB adapter: Rolling back transaction.
+[0m13:02:53.353369 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:02:53.353488 [debug] [MainThread]: Connection 'list_paintdb' was properly closed.
+[0m13:02:53.353604 [info ] [MainThread]: 
+[0m13:02:53.353758 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.02 seconds (0.02s).
+[0m13:02:53.353977 [error] [MainThread]: Encountered an error:
+Runtime Error
+  IO Error: Cannot open file "/Users/haley/Documents/AI/text-to-sql/dbt-duckdb/databases/paintdb.duckdb": No such file or directory
+[0m13:02:53.354904 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.68672776, "process_in_blocks": "0", "process_kernel_time": 0.086593, "process_mem_max_rss": "139444224", "process_out_blocks": "0", "process_user_time": 1.137133}
+[0m13:02:53.355075 [debug] [MainThread]: Command `dbt run` failed at 13:02:53.355041 after 0.69 seconds
+[0m13:02:53.355216 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1030aec40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1053a25b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105614c70>]}
+[0m13:02:53.355369 [debug] [MainThread]: Flushing usage events
+[0m13:02:53.729609 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:13:50.812087 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10570ec40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106789160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106789460>]}
+
+
+============================== 13:13:50.813605 | b4fef56a-077d-4d2b-906f-3f933e88ac5c ==============================
+[0m13:13:50.813605 [info ] [MainThread]: Running with dbt=1.10.13
+[0m13:13:50.813871 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'invocation_command': 'dbt run --profiles-dir .', 'target_path': 'None', 'debug': 'False', 'partial_parse': 'True', 'version_check': 'True', 'warn_error': 'None', 'profiles_dir': '.', 'log_format': 'default', 'no_print': 'None', 'fail_fast': 'False', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'log_path': '/Users/haley/Documents/AI/text-to-sql/dbt-duckdb/logs', 'quiet': 'False', 'static_parser': 'True', 'indirect_selection': 'eager', 'write_json': 'True', 'empty': 'False', 'use_experimental_parser': 'False', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True'}
+[0m13:13:50.815020 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'painter'
+[0m13:13:50.815909 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.033550333, "process_in_blocks": "0", "process_kernel_time": 0.056397, "process_mem_max_rss": "97206272", "process_out_blocks": "0", "process_user_time": 0.52129}
+[0m13:13:50.816118 [debug] [MainThread]: Command `dbt run` failed at 13:13:50.816068 after 0.03 seconds
+[0m13:13:50.816261 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10570ec40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106765760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067bc1c0>]}
+[0m13:13:50.816449 [debug] [MainThread]: Flushing usage events
+[0m13:13:52.393691 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:14:08.486054 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103fefbe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105069190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105069490>]}
+
+
+============================== 13:14:08.487610 | f4c9f44d-797f-43a1-a1f0-f6b7fe4b7146 ==============================
+[0m13:14:08.487610 [info ] [MainThread]: Running with dbt=1.10.13
+[0m13:14:08.487865 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'introspect': 'True', 'invocation_command': 'dbt run --profiles-dir .', 'static_parser': 'True', 'use_experimental_parser': 'False', 'target_path': 'None', 'log_format': 'default', 'use_colors': 'True', 'log_path': '/Users/haley/Documents/AI/text-to-sql/dbt-duckdb/logs', 'no_print': 'None', 'version_check': 'True', 'empty': 'False', 'profiles_dir': '.', 'write_json': 'True', 'debug': 'False', 'warn_error': 'None', 'log_cache_events': 'False', 'fail_fast': 'False', 'quiet': 'False', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'indirect_selection': 'eager'}
+[0m13:14:08.489066 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'painter'
+[0m13:14:08.489959 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.03278671, "process_in_blocks": "0", "process_kernel_time": 0.049618, "process_mem_max_rss": "98123776", "process_out_blocks": "0", "process_user_time": 0.521439}
+[0m13:14:08.490139 [debug] [MainThread]: Command `dbt run` failed at 13:14:08.490102 after 0.03 seconds
+[0m13:14:08.490284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103fefbe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10509cf10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10509c1c0>]}
+[0m13:14:08.490461 [debug] [MainThread]: Flushing usage events
+[0m13:14:08.875565 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:14:27.844810 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10323bb80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1043e62e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1043e65e0>]}
+
+
+============================== 13:14:27.846341 | e3ac36c2-e72f-4476-a79f-47f709e78b7e ==============================
+[0m13:14:27.846341 [info ] [MainThread]: Running with dbt=1.10.13
+[0m13:14:27.846592 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'no_print': 'None', 'debug': 'False', 'static_parser': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt run --profiles-dir .', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'log_format': 'default', 'fail_fast': 'False', 'target_path': 'None', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'False', 'log_path': '/Users/haley/Documents/AI/text-to-sql/dbt-duckdb/logs', 'warn_error': 'None', 'quiet': 'False', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'write_json': 'True', 'profiles_dir': '.', 'log_cache_events': 'False', 'introspect': 'True'}
+[0m13:14:27.847746 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'painter'
+[0m13:14:27.848616 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.032966085, "process_in_blocks": "0", "process_kernel_time": 0.04972, "process_mem_max_rss": "97370112", "process_out_blocks": "0", "process_user_time": 0.519269}
+[0m13:14:27.848793 [debug] [MainThread]: Command `dbt run` failed at 13:14:27.848754 after 0.03 seconds
+[0m13:14:27.848934 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10323bb80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1043c0fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103bab340>]}
+[0m13:14:27.849110 [debug] [MainThread]: Flushing usage events
+[0m13:14:28.220600 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:15:27.890117 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1037c7b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1053662e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1053665e0>]}
+
+
+============================== 13:15:27.891641 | e83f609e-99bb-4579-994d-9441c4b5729c ==============================
+[0m13:15:27.891641 [info ] [MainThread]: Running with dbt=1.10.13
+[0m13:15:27.891892 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'indirect_selection': 'eager', 'log_format': 'default', 'quiet': 'False', 'cache_selected_only': 'False', 'invocation_command': 'dbt run --profiles-dir .', 'fail_fast': 'False', 'version_check': 'True', 'profiles_dir': '.', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_cache_events': 'False', 'use_colors': 'True', 'target_path': 'None', 'write_json': 'True', 'empty': 'False', 'log_path': '/Users/haley/Documents/AI/text-to-sql/dbt-duckdb/logs', 'warn_error': 'None', 'static_parser': 'True', 'printer_width': '80', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'partial_parse': 'True'}
+[0m13:15:27.893062 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'painter'
+[0m13:15:27.893962 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.033639167, "process_in_blocks": "0", "process_kernel_time": 0.057605, "process_mem_max_rss": "98058240", "process_out_blocks": "0", "process_user_time": 0.523528}
+[0m13:15:27.894135 [debug] [MainThread]: Command `dbt run` failed at 13:15:27.894097 after 0.03 seconds
+[0m13:15:27.894273 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1037c7b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105342fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b5b340>]}
+[0m13:15:27.894447 [debug] [MainThread]: Flushing usage events
+[0m13:15:28.281758 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:16:26.109129 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105737be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067b1190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067b1490>]}
+
+
+============================== 13:16:26.110660 | 4743cc60-6c63-47bd-89c3-d1dd29fe455e ==============================
+[0m13:16:26.110660 [info ] [MainThread]: Running with dbt=1.10.13
+[0m13:16:26.110915 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '.', 'static_parser': 'True', 'quiet': 'False', 'empty': 'False', 'fail_fast': 'False', 'no_print': 'None', 'write_json': 'True', 'invocation_command': 'dbt run --profiles-dir .', 'log_format': 'default', 'log_path': '/Users/haley/Documents/AI/text-to-sql/dbt-duckdb/logs', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'introspect': 'True', 'use_colors': 'True', 'partial_parse': 'True', 'indirect_selection': 'eager', 'printer_width': '80', 'target_path': 'None', 'version_check': 'True', 'debug': 'False'}
+[0m13:16:26.200615 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4743cc60-6c63-47bd-89c3-d1dd29fe455e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107381f70>]}
+[0m13:16:26.224467 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4743cc60-6c63-47bd-89c3-d1dd29fe455e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070e32b0>]}
+[0m13:16:26.225166 [info ] [MainThread]: Registered adapter: duckdb=1.9.6
+[0m13:16:26.270723 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m13:16:26.301058 [info ] [MainThread]: Unable to do partial parsing because a project dependency has been added
+[0m13:16:26.301301 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '4743cc60-6c63-47bd-89c3-d1dd29fe455e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106032c10>]}
+[0m13:16:26.707430 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4743cc60-6c63-47bd-89c3-d1dd29fe455e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078bd130>]}
+[0m13:16:26.734018 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/haley/Documents/AI/text-to-sql/dbt-duckdb/target/manifest.json
+[0m13:16:26.734706 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/haley/Documents/AI/text-to-sql/dbt-duckdb/target/semantic_manifest.json
+[0m13:16:26.739225 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4743cc60-6c63-47bd-89c3-d1dd29fe455e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078c9c40>]}
+[0m13:16:26.739424 [info ] [MainThread]: Found 1 model, 431 macros
+[0m13:16:26.739582 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4743cc60-6c63-47bd-89c3-d1dd29fe455e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10783cf70>]}
+[0m13:16:26.740085 [info ] [MainThread]: 
+[0m13:16:26.740238 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:16:26.740370 [info ] [MainThread]: 
+[0m13:16:26.740605 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m13:16:26.740967 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_paintdb'
+[0m13:16:26.761570 [debug] [ThreadPool]: Using duckdb connection "list_paintdb"
+[0m13:16:26.761767 [debug] [ThreadPool]: On list_paintdb: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "painter", "target_name": "dev", "connection_name": "list_paintdb"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = 'paintdb'
+    
+  
+  
+[0m13:16:26.761892 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:16:27.655283 [debug] [ThreadPool]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "painter", "target_name": "dev", "connection_name": "list_paintdb"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = 'paintdb'
+    
+  
+  
+[0m13:16:27.656885 [debug] [ThreadPool]: DuckDB adapter: Rolling back transaction.
+[0m13:16:27.659004 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:16:27.659513 [debug] [MainThread]: Connection 'list_paintdb' was properly closed.
+[0m13:16:27.660008 [info ] [MainThread]: 
+[0m13:16:27.660871 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.92 seconds (0.92s).
+[0m13:16:27.661462 [error] [MainThread]: Encountered an error:
+Runtime Error
+  HTTP Error: Failed to download extension "csv" at URL "http://extensions.duckdb.org/v1.4.0/osx_arm64/csv.duckdb_extension.gz" (HTTP 404)
+  
+  Candidate extensions: "vss", "json", "mysql", "sqlite"
+  For more info, visit https://duckdb.org/docs/stable/extensions/troubleshooting?version=v1.4.0&platform=osx_arm64&extension=csv
+[0m13:16:27.664036 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 1.583704, "process_in_blocks": "0", "process_kernel_time": 0.112983, "process_mem_max_rss": "182910976", "process_out_blocks": "0", "process_user_time": 1.178799}
+[0m13:16:27.664441 [debug] [MainThread]: Command `dbt run` failed at 13:16:27.664363 after 1.58 seconds
+[0m13:16:27.664791 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105737be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e938b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078cdfa0>]}
+[0m13:16:27.665155 [debug] [MainThread]: Flushing usage events
+[0m13:16:28.063519 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:16:43.543968 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105347b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1064e52e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1064e55e0>]}
+
+
+============================== 13:16:43.545488 | 862275d8-fb75-45da-926d-53701ec9c37b ==============================
+[0m13:16:43.545488 [info ] [MainThread]: Running with dbt=1.10.13
+[0m13:16:43.545744 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'profiles_dir': '.', 'write_json': 'True', 'log_format': 'default', 'use_colors': 'True', 'partial_parse': 'True', 'invocation_command': 'dbt run --profiles-dir .', 'introspect': 'True', 'fail_fast': 'False', 'indirect_selection': 'eager', 'version_check': 'True', 'static_parser': 'True', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'log_path': '/Users/haley/Documents/AI/text-to-sql/dbt-duckdb/logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'quiet': 'False', 'no_print': 'None', 'empty': 'False', 'printer_width': '80', 'debug': 'False', 'log_cache_events': 'False', 'target_path': 'None'}
+[0m13:16:43.635758 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '862275d8-fb75-45da-926d-53701ec9c37b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105cb7490>]}
+[0m13:16:43.660391 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '862275d8-fb75-45da-926d-53701ec9c37b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1066da190>]}
+[0m13:16:43.661120 [info ] [MainThread]: Registered adapter: duckdb=1.9.6
+[0m13:16:43.711961 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m13:16:43.742942 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m13:16:43.743160 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '862275d8-fb75-45da-926d-53701ec9c37b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071b8610>]}
+[0m13:16:44.148639 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '862275d8-fb75-45da-926d-53701ec9c37b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1076be130>]}
+[0m13:16:44.174787 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/haley/Documents/AI/text-to-sql/dbt-duckdb/target/manifest.json
+[0m13:16:44.175452 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/haley/Documents/AI/text-to-sql/dbt-duckdb/target/semantic_manifest.json
+[0m13:16:44.179771 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '862275d8-fb75-45da-926d-53701ec9c37b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1076c9a30>]}
+[0m13:16:44.179965 [info ] [MainThread]: Found 1 model, 431 macros
+[0m13:16:44.180118 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '862275d8-fb75-45da-926d-53701ec9c37b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10746f250>]}
+[0m13:16:44.180621 [info ] [MainThread]: 
+[0m13:16:44.180775 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:16:44.180906 [info ] [MainThread]: 
+[0m13:16:44.181143 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m13:16:44.181503 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_paintdb'
+[0m13:16:44.200470 [debug] [ThreadPool]: Using duckdb connection "list_paintdb"
+[0m13:16:44.200660 [debug] [ThreadPool]: On list_paintdb: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "painter", "target_name": "dev", "connection_name": "list_paintdb"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = 'paintdb'
+    
+  
+  
+[0m13:16:44.200792 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:16:45.238741 [debug] [ThreadPool]: SQL status: OK in 1.038 seconds
+[0m13:16:45.240320 [debug] [ThreadPool]: On list_paintdb: Close
+[0m13:16:45.241403 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_paintdb, now list_paintdb_main)
+[0m13:16:45.247192 [debug] [ThreadPool]: Using duckdb connection "list_paintdb_main"
+[0m13:16:45.247465 [debug] [ThreadPool]: On list_paintdb_main: BEGIN
+[0m13:16:45.247687 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:16:45.248189 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m13:16:45.248411 [debug] [ThreadPool]: Using duckdb connection "list_paintdb_main"
+[0m13:16:45.248634 [debug] [ThreadPool]: On list_paintdb_main: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "painter", "target_name": "dev", "connection_name": "list_paintdb_main"} */
+select
+      'paintdb' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'paintdb'
+  
+[0m13:16:45.256655 [debug] [ThreadPool]: SQL status: OK in 0.008 seconds
+[0m13:16:45.257434 [debug] [ThreadPool]: On list_paintdb_main: ROLLBACK
+[0m13:16:45.258558 [debug] [ThreadPool]: Failed to rollback 'list_paintdb_main'
+[0m13:16:45.258750 [debug] [ThreadPool]: On list_paintdb_main: Close
+[0m13:16:45.259099 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '862275d8-fb75-45da-926d-53701ec9c37b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1076c9280>]}
+[0m13:16:45.259457 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:16:45.259667 [debug] [MainThread]: On master: BEGIN
+[0m13:16:45.259844 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:16:45.260252 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:16:45.260449 [debug] [MainThread]: On master: COMMIT
+[0m13:16:45.260633 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:16:45.260803 [debug] [MainThread]: On master: COMMIT
+[0m13:16:45.261053 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:16:45.261231 [debug] [MainThread]: On master: Close
+[0m13:16:45.263897 [debug] [Thread-1  ]: Began running node model.painter.test
+[0m13:16:45.264212 [info ] [Thread-1  ]: 1 of 1 START sql view model main.test .......................................... [RUN]
+[0m13:16:45.264490 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_paintdb_main, now model.painter.test)
+[0m13:16:45.264704 [debug] [Thread-1  ]: Began compiling node model.painter.test
+[0m13:16:45.268985 [debug] [Thread-1  ]: Writing injected SQL for node "model.painter.test"
+[0m13:16:45.269452 [debug] [Thread-1  ]: Began executing node model.painter.test
+[0m13:16:45.288236 [debug] [Thread-1  ]: Writing runtime sql for node "model.painter.test"
+[0m13:16:45.288845 [debug] [Thread-1  ]: Using duckdb connection "model.painter.test"
+[0m13:16:45.289033 [debug] [Thread-1  ]: On model.painter.test: BEGIN
+[0m13:16:45.289198 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m13:16:45.289694 [debug] [Thread-1  ]: SQL status: OK in 0.000 seconds
+[0m13:16:45.289926 [debug] [Thread-1  ]: Using duckdb connection "model.painter.test"
+[0m13:16:45.290118 [debug] [Thread-1  ]: On model.painter.test: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "painter", "target_name": "dev", "node_id": "model.painter.test"} */
+
+  
+  create view paintdb.main."test__dbt_tmp" as (
+    select 1 as id
+  );
+
+[0m13:16:45.290446 [debug] [Thread-1  ]: SQL status: OK in 0.000 seconds
+[0m13:16:45.293699 [debug] [Thread-1  ]: Using duckdb connection "model.painter.test"
+[0m13:16:45.293896 [debug] [Thread-1  ]: On model.painter.test: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "painter", "target_name": "dev", "node_id": "model.painter.test"} */
+alter view paintdb.main."test__dbt_tmp" rename to "test"
+[0m13:16:45.294232 [debug] [Thread-1  ]: SQL status: OK in 0.000 seconds
+[0m13:16:45.298910 [debug] [Thread-1  ]: On model.painter.test: COMMIT
+[0m13:16:45.299086 [debug] [Thread-1  ]: Using duckdb connection "model.painter.test"
+[0m13:16:45.299241 [debug] [Thread-1  ]: On model.painter.test: COMMIT
+[0m13:16:45.299790 [debug] [Thread-1  ]: SQL status: OK in 0.000 seconds
+[0m13:16:45.302459 [debug] [Thread-1  ]: Using duckdb connection "model.painter.test"
+[0m13:16:45.302639 [debug] [Thread-1  ]: On model.painter.test: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "painter", "target_name": "dev", "node_id": "model.painter.test"} */
+
+      drop view if exists paintdb.main."test__dbt_backup" cascade
+    
+[0m13:16:45.302894 [debug] [Thread-1  ]: SQL status: OK in 0.000 seconds
+[0m13:16:45.304035 [debug] [Thread-1  ]: On model.painter.test: Close
+[0m13:16:45.304841 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '862275d8-fb75-45da-926d-53701ec9c37b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1076cdfd0>]}
+[0m13:16:45.305132 [info ] [Thread-1  ]: 1 of 1 OK created sql view model main.test ..................................... [[32mOK[0m in 0.04s]
+[0m13:16:45.305387 [debug] [Thread-1  ]: Finished running node model.painter.test
+[0m13:16:45.305863 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:16:45.306010 [debug] [MainThread]: On master: BEGIN
+[0m13:16:45.306137 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:16:45.306411 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:16:45.306542 [debug] [MainThread]: On master: COMMIT
+[0m13:16:45.306670 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:16:45.306793 [debug] [MainThread]: On master: COMMIT
+[0m13:16:45.306973 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:16:45.307111 [debug] [MainThread]: On master: Close
+[0m13:16:45.307277 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:16:45.307408 [debug] [MainThread]: Connection 'model.painter.test' was properly closed.
+[0m13:16:45.307544 [info ] [MainThread]: 
+[0m13:16:45.307696 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 1.13 seconds (1.13s).
+[0m13:16:45.307972 [debug] [MainThread]: Command end result
+[0m13:16:45.317710 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/haley/Documents/AI/text-to-sql/dbt-duckdb/target/manifest.json
+[0m13:16:45.318473 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/haley/Documents/AI/text-to-sql/dbt-duckdb/target/semantic_manifest.json
+[0m13:16:45.321649 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/haley/Documents/AI/text-to-sql/dbt-duckdb/target/run_results.json
+[0m13:16:45.321829 [info ] [MainThread]: 
+[0m13:16:45.322029 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:16:45.322177 [info ] [MainThread]: 
+[0m13:16:45.322331 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m13:16:45.323385 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.8081923, "process_in_blocks": "0", "process_kernel_time": 0.131992, "process_mem_max_rss": "191938560", "process_out_blocks": "0", "process_user_time": 1.307774}
+[0m13:16:45.323571 [debug] [MainThread]: Command `dbt run` succeeded at 13:16:45.323534 after 1.81 seconds
+[0m13:16:45.323739 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105347b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055db730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105cb7490>]}
+[0m13:16:45.323914 [debug] [MainThread]: Flushing usage events
+[0m13:16:45.706299 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:46:35.394827 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075b7c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110a65160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110a65460>]}
+
+
+============================== 13:46:35.396655 | 619faf81-1387-4ebc-96ab-f084047117be ==============================
+[0m13:46:35.396655 [info ] [MainThread]: Running with dbt=1.10.13
+[0m13:46:35.396920 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'use_colors': 'True', 'log_path': '/Users/haley/Documents/AI/text-to-sql/dbt-duckdb/logs', 'debug': 'False', 'invocation_command': 'dbt run --profiles-dir .', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'version_check': 'True', 'log_cache_events': 'False', 'profiles_dir': '.', 'write_json': 'True', 'printer_width': '80', 'indirect_selection': 'eager', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'False', 'warn_error': 'None', 'use_experimental_parser': 'False', 'log_format': 'default', 'introspect': 'True', 'cache_selected_only': 'False'}
+[0m13:46:35.491085 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '619faf81-1387-4ebc-96ab-f084047117be', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110af13d0>]}
+[0m13:46:35.515640 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '619faf81-1387-4ebc-96ab-f084047117be', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110e28b50>]}
+[0m13:46:35.516598 [info ] [MainThread]: Registered adapter: duckdb=1.9.6
+[0m13:46:35.561806 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m13:46:35.604248 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m13:46:35.604462 [debug] [MainThread]: Partial parsing: added file: painter://models/s3_test.sql
+[0m13:46:35.675965 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.painter.s3_test' (models/s3_test.sql) depends on a node named 's3.paint_database_v1' which was not found
+[0m13:46:35.677916 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.31301734, "process_in_blocks": "0", "process_kernel_time": 0.089567, "process_mem_max_rss": "128729088", "process_out_blocks": "0", "process_user_time": 0.766762}
+[0m13:46:35.678135 [debug] [MainThread]: Command `dbt run` failed at 13:46:35.678090 after 0.31 seconds
+[0m13:46:35.678311 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075b7c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111368b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1112fd2e0>]}
+[0m13:46:35.678480 [debug] [MainThread]: Flushing usage events
+[0m13:46:36.084030 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:47:52.582896 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108a6bb50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a5e5160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a5e5460>]}
+
+
+============================== 13:47:52.584461 | e66eeb80-ac8a-4c25-af83-ef4a4a2674d3 ==============================
+[0m13:47:52.584461 [info ] [MainThread]: Running with dbt=1.10.13
+[0m13:47:52.584721 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'empty': 'False', 'version_check': 'True', 'introspect': 'True', 'no_print': 'None', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'invocation_command': 'dbt run --profiles-dir .', 'log_format': 'default', 'fail_fast': 'False', 'partial_parse': 'True', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'warn_error': 'None', 'cache_selected_only': 'False', 'printer_width': '80', 'use_colors': 'True', 'profiles_dir': '.', 'quiet': 'False', 'target_path': 'None', 'static_parser': 'True', 'log_path': '/Users/haley/Documents/AI/text-to-sql/dbt-duckdb/logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m13:47:52.674158 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e66eeb80-ac8a-4c25-af83-ef4a4a2674d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a7ee970>]}
+[0m13:47:52.698228 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e66eeb80-ac8a-4c25-af83-ef4a4a2674d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104fe8730>]}
+[0m13:47:52.698924 [info ] [MainThread]: Registered adapter: duckdb=1.9.6
+[0m13:47:52.745131 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m13:47:52.784813 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m13:47:52.785049 [debug] [MainThread]: Partial parsing: added file: painter://models/s3_test.sql
+[0m13:47:52.856670 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.painter.s3_test' (models/s3_test.sql) depends on a source named 's3.s3.paint_database_v1' which was not found
+[0m13:47:52.857726 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.3038251, "process_in_blocks": "0", "process_kernel_time": 0.084449, "process_mem_max_rss": "129400832", "process_out_blocks": "0", "process_user_time": 0.763752}
+[0m13:47:52.858229 [debug] [MainThread]: Command `dbt run` failed at 13:47:52.858186 after 0.30 seconds
+[0m13:47:52.858404 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108a6bb50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b202940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b4dedc0>]}
+[0m13:47:52.858564 [debug] [MainThread]: Flushing usage events
+[0m13:47:53.228227 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:48:03.346601 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103bffbb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c791f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c794f0>]}
+
+
+============================== 13:48:03.348109 | ab003504-ac4d-43cf-8d5d-552dde7c05fa ==============================
+[0m13:48:03.348109 [info ] [MainThread]: Running with dbt=1.10.13
+[0m13:48:03.348364 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'static_parser': 'True', 'invocation_command': 'dbt run --profiles-dir .', 'use_colors': 'True', 'log_format': 'default', 'warn_error': 'None', 'version_check': 'True', 'log_cache_events': 'False', 'empty': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '.', 'target_path': 'None', 'no_print': 'None', 'introspect': 'True', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'quiet': 'False', 'debug': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'indirect_selection': 'eager', 'log_path': '/Users/haley/Documents/AI/text-to-sql/dbt-duckdb/logs'}
+[0m13:48:03.437372 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ab003504-ac4d-43cf-8d5d-552dde7c05fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103ea8b50>]}
+[0m13:48:03.461955 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ab003504-ac4d-43cf-8d5d-552dde7c05fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104d40490>]}
+[0m13:48:03.462675 [info ] [MainThread]: Registered adapter: duckdb=1.9.6
+[0m13:48:03.509009 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m13:48:03.548125 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m13:48:03.548343 [debug] [MainThread]: Partial parsing: added file: painter://models/s3_test.sql
+[0m13:48:03.620446 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.painter.s3_test' (models/s3_test.sql) depends on a source named 's3.paint_database_v1' which was not found
+[0m13:48:03.621454 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.30356112, "process_in_blocks": "0", "process_kernel_time": 0.076705, "process_mem_max_rss": "129236992", "process_out_blocks": "0", "process_user_time": 0.767113}
+[0m13:48:03.621643 [debug] [MainThread]: Command `dbt run` failed at 13:48:03.621602 after 0.30 seconds
+[0m13:48:03.621799 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103bffbb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1024e9f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105294df0>]}
+[0m13:48:03.621967 [debug] [MainThread]: Flushing usage events
+[0m13:48:04.009807 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:48:24.252025 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10773ec10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1087b9160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1087b9460>]}
+
+
+============================== 13:48:24.253593 | 73bd48bc-d2a3-437e-9d5e-9b7486d79282 ==============================
+[0m13:48:24.253593 [info ] [MainThread]: Running with dbt=1.10.13
+[0m13:48:24.253858 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'log_format': 'default', 'no_print': 'None', 'introspect': 'True', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'profiles_dir': '.', 'fail_fast': 'False', 'target_path': 'None', 'indirect_selection': 'eager', 'printer_width': '80', 'log_path': '/Users/haley/Documents/AI/text-to-sql/dbt-duckdb/logs', 'write_json': 'True', 'static_parser': 'True', 'partial_parse': 'True', 'warn_error': 'None', 'invocation_command': 'dbt run --profiles-dir .', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'quiet': 'False', 'use_colors': 'True', 'empty': 'False'}
+[0m13:48:24.342730 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '73bd48bc-d2a3-437e-9d5e-9b7486d79282', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1088a3310>]}
+[0m13:48:24.366737 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '73bd48bc-d2a3-437e-9d5e-9b7486d79282', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b80850>]}
+[0m13:48:24.367471 [info ] [MainThread]: Registered adapter: duckdb=1.9.6
+[0m13:48:24.412360 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m13:48:24.442804 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m13:48:24.443017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '73bd48bc-d2a3-437e-9d5e-9b7486d79282', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10806f7f0>]}
+[0m13:48:24.819917 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.painter.s3_test' (models/s3_test.sql) depends on a source named 's3.paint_database_v1' which was not found
+[0m13:48:24.820974 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.5979942, "process_in_blocks": "0", "process_kernel_time": 0.078464, "process_mem_max_rss": "129859584", "process_out_blocks": "0", "process_user_time": 1.060002}
+[0m13:48:24.821158 [debug] [MainThread]: Command `dbt run` failed at 13:48:24.821122 after 0.60 seconds
+[0m13:48:24.821318 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10773ec10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109171220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10913cdf0>]}
+[0m13:48:24.821475 [debug] [MainThread]: Flushing usage events
+[0m13:48:25.392466 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:03:12.924176 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107932c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1089ad160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1089ad460>]}
+
+
+============================== 14:03:12.925713 | 08ef5e9a-9c01-41b6-a5fa-a1c909ab4464 ==============================
+[0m14:03:12.925713 [info ] [MainThread]: Running with dbt=1.10.13
+[0m14:03:12.925968 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'warn_error': 'None', 'fail_fast': 'False', 'log_path': '/Users/haley/Documents/AI/text-to-sql/dbt-duckdb/logs', 'debug': 'False', 'write_json': 'True', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'invocation_command': 'dbt run --profiles-dir .', 'use_colors': 'True', 'no_print': 'None', 'empty': 'False', 'indirect_selection': 'eager', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'static_parser': 'True', 'quiet': 'False', 'log_format': 'default', 'log_cache_events': 'False', 'introspect': 'True', 'partial_parse': 'True', 'profiles_dir': '.'}
+[0m14:03:13.016891 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '08ef5e9a-9c01-41b6-a5fa-a1c909ab4464', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ac1cd0>]}
+[0m14:03:13.043958 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '08ef5e9a-9c01-41b6-a5fa-a1c909ab4464', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108dea100>]}
+[0m14:03:13.044800 [info ] [MainThread]: Registered adapter: duckdb=1.9.6
+[0m14:03:13.090872 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m14:03:13.121549 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m14:03:13.121764 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '08ef5e9a-9c01-41b6-a5fa-a1c909ab4464', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108263a60>]}
+[0m14:03:13.500847 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.painter.s3_test' (models/s3_test.sql) depends on a source named 's3.paint_database_v1' which was not found
+[0m14:03:13.501950 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.6069937, "process_in_blocks": "0", "process_kernel_time": 0.090982, "process_mem_max_rss": "129613824", "process_out_blocks": "0", "process_user_time": 1.062705}
+[0m14:03:13.502135 [debug] [MainThread]: Command `dbt run` failed at 14:03:13.502098 after 0.61 seconds
+[0m14:03:13.502296 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107932c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109272250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1092273a0>]}
+[0m14:03:13.502451 [debug] [MainThread]: Flushing usage events
+[0m14:03:14.007717 [debug] [MainThread]: An error was encountered while trying to flush usage events

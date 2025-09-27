@@ -1,0 +1,9 @@
+your_profile_name:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: '../../AI/Databases/database_name.duckdb'
+      extensions:
+        - parquet
+        - csv
