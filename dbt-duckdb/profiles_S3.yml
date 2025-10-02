@@ -1,0 +1,23 @@
+painter:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: 'databases/paintdb.duckdb'
+      schema: 'painter'
+      extensions:
+        - parquet
+        - httpfs
+        - aws
+      settings:
+        s3_access_key_id: "{{ env_var('AWS_ACCESS_KEY_ID') }}"
+        s3_secret_access_key: "{{ env_var('AWS_SECRET_ACCESS_KEY') }}"
+        s3_region: us-west-2
+      s3_bucket: s3-haleygeek-dbt-data
+      s3_role_arn: arn:aws:iam::266735831713:role/dbt-user
+      s3_profile: dbt-user
+
+      
+      
+      
+          

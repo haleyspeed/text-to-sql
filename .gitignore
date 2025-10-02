@@ -12,6 +12,9 @@
 # pickles
 *.sav
 
+# tmp
+tmp/
+
 ## csv
 *.csv
 

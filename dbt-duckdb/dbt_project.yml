@@ -17,4 +17,10 @@ clean-targets: [targets]
 quoting:
   database:  false
   schema: false
+
+models:
+  painter:
+    s3_bucket:
+      +materialized: 'table'
+
   

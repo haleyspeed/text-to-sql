@@ -7,3 +7,4 @@ duckdb~=1.4.0
 pyspark~=4.0.1 # Only for AWS Glue
 dbt-duckdb~=1.9.6
 loguru~=0.7.3
+pyarrow~=21.0.0

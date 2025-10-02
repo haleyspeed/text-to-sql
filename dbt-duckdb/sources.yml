@@ -1,6 +1,0 @@
-    sources:
-      - name: s3
-        meta:
-          external_location: "s3://haleygeek-data/sources/{name}.csv" # Or .parquet, etc.
-        tables:
-          - name: paint_database_v1

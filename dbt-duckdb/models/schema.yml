@@ -1,0 +1,7 @@
+    sources:
+      - name: s3
+        meta: 
+          external_location: 's3://s3-haleygeek-dbt-data/painterdb/paint_database_v1.parquet' # Or .parquet, etc.
+        tables:
+          - name: paint_database_v1
+            
